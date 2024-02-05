@@ -3,6 +3,8 @@ import Footer from "../../components/Footer";
 import Container from "../../components/Container";
 import styles from "./Contatos.module.css"
 import { GoMail } from 'react-icons/go'
+import { BsInstagram, BsYoutube, BsGithub, BsLinkedin } from 'react-icons/bs'
+
 
 
 
@@ -18,6 +20,10 @@ function Contatos() {
 
      <div className={styles.ícones}>
       <GoMail />
+      <BsInstagram />
+      <BsYoutube />
+      <BsGithub />
+      <BsLinkedin />
      </div>
      </section>
      </Container>
