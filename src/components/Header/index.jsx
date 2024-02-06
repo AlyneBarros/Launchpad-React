@@ -1,17 +1,15 @@
-import { Link } from 'react-router-dom'
 import styles from './Header.module.css'
+import SuaLogo from 'C:/Users/abaraujo/projetos pessoais/Launchpad/src/components/Header/imgLogo/UqfnLogo_fundoTransp.png'
+
 
 function Header(){
 return (
 <header className={styles.header}>
-    <Link to= "/">
-    <span>AlyneBarros.dev</span>
-    </Link>
+   <div className={styles.nav_brand}>
+   <img  id= 'logo' src={SuaLogo} alt="Logo da sua aplicação" />
+   </div>
+   
     <nav>
-        <Link to= "/">Home</Link>
-        <Link to= "/sobre">Sobre</Link>
-        <Link to= "/projetos">Projetos</Link>
-        <Link to= "/contatos">Contatos</Link>
     </nav>
 </header>
 )
