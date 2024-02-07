@@ -1,13 +1,18 @@
+import PropTypes from 'prop-types';
+import style from './Button.module.css';
 
-import React from "react";
-import styles from './Button.module.css'
-
-const Button = ({ Text, onClick, Type = "button" }) => {
+const Button = ({ onClick, children }) => {
   return (
-    <C.Button type={Type} onClick={onClick}>
-      {Text}
-    </C.Button>
+    <button className={style.button} onClick={onClick}>
+      {children}
+    </button>
   );
+};
+
+// Adicione PropTypes para validar as props
+Button.propTypes = {
+  onClick: PropTypes.func.isRequired,
+  children: PropTypes.node.isRequired,
 };
 
 export default Button;

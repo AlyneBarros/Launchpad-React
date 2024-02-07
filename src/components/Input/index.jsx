@@ -1,15 +1,24 @@
-import React from 'react'
-import styles from './Input.module.css'
+import PropTypes from 'prop-types';
+import styles from  './Input.module.css';
 
 const Input = ({ type, placeholder, value, onChange }) => {
   return (
-    <C.Input
+    <input
+      type={type}
+      className={styles.input}
+      placeholder={placeholder}
       value={value}
       onChange={onChange}
-      type={type}
-      placeholder={placeholder}
     />
   );
 };
+
+Input.propTypes = {
+  type: PropTypes.string.isRequired,
+  placeholder: PropTypes.string.isRequired,
+  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+  onChange: PropTypes.func.isRequired,
+};
+
 
 export default Input;

@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import Card from '../../components/Card'
 import styles from './Projetos.module.css'
+import NavBar from '../../components/NavBar'
+
 
 function Projetos() {
 
@@ -8,7 +10,7 @@ function Projetos() {
 
     useEffect(() => {
         const buscarRepositorios = async () => {
-            const response = await fetch('https://api.github.com/users/edsonmaia/repos')
+            const response = await fetch('https://api.github.com/users/edsonmaia/repos?page=1&per_page=50')
             const data = await response.json()
             setRepositories(data)
         }
@@ -16,6 +18,8 @@ function Projetos() {
     }, [])
 
     return (
+        <>
+       <NavBar />
         <section className={styles.projetos}>
             <h2>Projetos</h2>
             {
@@ -37,6 +41,7 @@ function Projetos() {
                 )
             }
         </section>
+        </>
     )
 }
 

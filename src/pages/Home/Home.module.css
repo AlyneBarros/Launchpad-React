@@ -1,45 +1,71 @@
-/*CSS da page home*/
-.home {
-    width: 100%;
-    min-height: 100vh;
-  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .home img {
-      height: 500px;
-  }
-  
-  .home p {
-      font-size: 3rem; /* 48px */
-      font-weight: bold;
-      margin-bottom: 1rem;
-  }
-  
-  .home span {
-      color: var(--red);
-  }
-  
-  .btn {
-  width: 250px;
-  height: 50px;
-  font-size: 1.125rem;
-  font-weight: bold;
-  border: 0;
-  border-radius: 8px;
+
+.container{
+    
+        width: 285px;
+        height: 255px;
+        background-color: var(--soft-white);
+        color: var(--gray);
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px #22222270;
+        padding: 20px;
+      
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 18px;
+      
+      
+}
+
+.content {
+  gap: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-decoration: none;
+  flex-direction: column;
+  width: 100%;
+  box-shadow: 0 1px 2px #0003;
+  background-color: white;
+  max-width: 350px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.label{
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
+}
+
+
+
+
+.labelError{
+    font-size: 14px;
+    color: red;
+}
+
+
+
+.strong {
+  cursor: pointer;
+
+  a {
+    text-decoration: none;
+    color: #676767;
   }
-  
-  .btn_red {
-      background-color: var(--red) ;
-      color: var(--white);
-  }
-  
-  .btn_:hover {
-      background-color: var(--primary);
-  }
+}
+
+.languageSelect{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+

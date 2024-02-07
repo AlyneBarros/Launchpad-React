@@ -1,11 +1,11 @@
-import styles from './Header.module.css'
+import styles from './NavBar.module.css'
 import SuaLogo from 'C:/Users/abaraujo/projetos pessoais/portfolio/src/components/Header/imgLogo/UqfnLogo_fundoTransp.png'
 
 
-function Header(){
+function NavBar(){
 return (
-<header className={styles.headers}>
-   <div className={styles.nav_brands}>
+<header className={styles.nav}>
+   <div className={styles.nav_brand}>
    <img  id= 'logo' src={SuaLogo} alt="Logo da sua aplicação" />
    </div>
    
@@ -17,4 +17,4 @@ return (
 
 
 
-export default Header
+export default NavBar
