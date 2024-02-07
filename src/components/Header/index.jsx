@@ -1,5 +1,5 @@
 import styles from './Header.module.css'
-import SuaLogo from 'C:/Users/abaraujo/projetos pessoais/Launchpad/src/components/Header/imgLogo/UqfnLogo_fundoTransp.png'
+import SuaLogo from 'C:/Users/alyne/OneDrive/Imagens/Área de Trabalho/Documentos/portifolio/src/components/Header/imgLogo/UqfnLogo_fundoTransp.png'
 
 
 function Header(){

@@ -7,6 +7,14 @@ import Page404 from "./pages/Page404";
 import Header from "./components/Header";
 import Container from "./components/Container";
 import Footer from "./components/Footer";
+import useAuth from "./components/hooks/userAuth";
+
+
+const Private = ({ Item }) => {
+  const { signed } = useAuth();
+
+  return signed > 0 ? <Item /> : <Signin />;
+};
 
 
 function AppRoutes() {
