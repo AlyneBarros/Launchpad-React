@@ -1,0 +1,26 @@
+.nav_projetosr {
+    width: 100%;
+    height: 30px;
+    background-color: var(--primary);
+    color: var(--white);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav_projetosr span {
+    font-size: 1.5rem; /* 24px -> 16px = 1rem */
+    font-weight: bold;
+}
+
+.nav_projetosr a {
+    text-decoration: none;
+    color: var(--white);
+    padding-right: 1.5rem;
+    font-size: 1.125rem; /* 18px */
+}
+
+.nav_projetosr a:hover {
+    color: var(--red);
+}

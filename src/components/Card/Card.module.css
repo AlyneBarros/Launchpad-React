@@ -1,6 +1,6 @@
 .card {
-    width: 200px;
-    height: 200px;
+    width: 185px;
+    height: 185px;
     background-color: var(--soft-white);
     color: var(--gray);
     border-radius: 8px;
@@ -14,10 +14,12 @@
 
 .card h3 {
     color: var(--primary);
+    text-decoration: none;
 }
 
 .card p {
     color: #555;
+    text-decoration: none;
 }
 
 .card_footer {

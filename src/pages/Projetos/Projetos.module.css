@@ -1,15 +1,21 @@
-
-.projetos h2 {
-text-align: center;
+/* Projetos.module.css */
+#NavProjetos{
+    margin-bottom: 100px;
+}
+.title {
+    text-align: center;
 }
 
-
-.lista {
-    width: 100%;
+.card_container {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
     gap: 1.5rem;
-    margin-block: 1rem;
 }
+
+.card_row {
+    display: flex;
+    gap: 1.5rem;
+}
+
+/* Estilos do Card podem permanecer os mesmos */
