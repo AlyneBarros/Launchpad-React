@@ -21,19 +21,20 @@ function NavBar() {
             <div className={styles.nav_brand}>
                 <img id='logo' src={SuaLogo} alt="Logo da sua aplicação" />
             </div>
+            <div className={styles.nav_separator}></div> {/* Linha horizontal */}
             <div className={styles.nav_menu}>
                 <button onClick={handleToggleMenu} className={styles.menu_button}>
                     Menu
                 </button>
                 {menuOpen && (
                     <div className={styles.dropdown_menu}>
-                    
                         <button onClick={handleLogout}>Logout</button>
                     </div>
                 )}
             </div>
         </header>
     );
+    
 }
 
 export default NavBar;

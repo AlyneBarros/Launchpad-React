@@ -3,34 +3,34 @@
 
 import NavBar from '../../components/NavBar';
 // import NavProjetos from '../../components/NavProjetos'
-import Card from '../../components/Card';
+// import Card from '../../components/Card';
 import styles from './Projetos.module.css';
 
 function Projetos() {
-    const projetos = [
-        {
-            name: "Projeto 1",
-            description: "Descrição do Projeto 1",
-            url: "/projeto-1" // URL da primeira aplicação
-        },
-        {
-            name: "Projeto 2",
-            description: "Descrição do Projeto 2",
-            url: "/projeto-2" // URL da segunda aplicação
-        },
-        {
-            name: "Projeto 3",
-            description: "Descrição do Projeto 3",
-            url: "/projeto-3" // URL da terceira aplicação
-        }
-    ];
+    // const projetos = [
+    //     {
+    //         name: "Projeto 1",
+    //         description: "Descrição do Projeto 1",
+    //         url: "/projeto-1" // URL da primeira aplicação
+    //     },
+    //     {
+    //         name: "Projeto 2",
+    //         description: "Descrição do Projeto 2",
+    //         url: "/projeto-2" // URL da segunda aplicação
+    //     },
+    //     {
+    //         name: "Projeto 3",
+    //         description: "Descrição do Projeto 3",
+    //         url: "/projeto-3" // URL da terceira aplicação
+    //     }
+    // ];
 
     return (
         <>
             <NavBar />
         {/* <NavProjetos /> */}
         <section className={styles.projeto_container}>
-            <h2 className={styles.title}>Projetos</h2>
+            {/* <h2 className={styles.title}>Projetos</h2>
             <div className={styles.card_container}>
                 <div id="projeto1" className={styles.card_row}>
                     <Card
@@ -49,7 +49,7 @@ function Projetos() {
                         />
                     ))}
                 </div>
-            </div>
+            </div> */}
             </section>
         </>
     )
