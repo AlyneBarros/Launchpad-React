@@ -1,18 +1,18 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 import styles from './NavBar.module.css';
 import SuaLogo from 'C:/Users/abaraujo/projetos pessoais/portfolio/src/components/Header/imgLogo/UqfnLogo_fundoTransp.png';
 
 function NavBar() {
-    const [menuOpen, setMenuOpen] = useState(false);
+    // const [menuOpen, setMenuOpen] = useState(false);
 
-    const handleToggleMenu = () => {
-        setMenuOpen(!menuOpen);
-    };
+    // const handleToggleMenu = () => {
+    //     setMenuOpen(!menuOpen);
+    // };
 
-    const handleLogout = () => {
-        // Lógica para logout
-        console.log('Logout realizado');
-    };
+    // const handleLogout = () => {
+    //     // Lógica para logout
+    //     console.log('Logout realizado');
+    // };
 
     
 
@@ -23,14 +23,14 @@ function NavBar() {
             </div>
             <div className={styles.nav_separator}></div> {/* Linha horizontal */}
             <div className={styles.nav_menu}>
-                <button onClick={handleToggleMenu} className={styles.menu_button}>
+                {/* <button onClick={handleToggleMenu} className={styles.menu_button}>
                     Menu
-                </button>
-                {menuOpen && (
-                    <div className={styles.dropdown_menu}>
+                </button> */}
+                {/* {menuOpen && ( */}
+                    {/* <div className={styles.dropdown_menu}>
                         <button onClick={handleLogout}>Logout</button>
-                    </div>
-                )}
+                    </div> */}
+                {/* )} */}
             </div>
         </header>
     );
